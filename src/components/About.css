@@ -103,4 +103,6 @@
 
 @media (max-width: 520px) {
   .about-cards { grid-template-columns: 1fr; }
+  .about-top { margin-bottom: 2.5rem; }
+  .about-bio-col p { font-size: 0.9rem; }
 }

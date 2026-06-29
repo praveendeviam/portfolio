@@ -92,6 +92,8 @@
 }
 
 @media (max-width: 540px) {
-  .bento-grid { grid-template-columns: 1fr; }
+  .bento-grid { grid-template-columns: 1fr; gap: 0.75rem; }
   .bento-grid > * { grid-column: 1 !important; }
+  .bento-card { padding: 1.25rem; }
+  .chip { font-size: 0.78rem; padding: 0.4rem 0.7rem; }
 }
