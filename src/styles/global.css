@@ -1,18 +1,18 @@
 :root {
-  --bg:           #080808;
-  --surface:      #0f0f0f;
-  --surface-2:    #161616;
-  --surface-3:    #1c1c1c;
-  --border:       rgba(255,255,255,0.06);
-  --border-hi:    rgba(255,255,255,0.11);
-  --text:         #f0f0ef;
-  --text-muted:   #888;
-  --text-faint:   #444;
-  --accent:       #4ade80;
-  --accent-dim:   rgba(74,222,128,0.1);
-  --accent-glow:  rgba(74,222,128,0.25);
-  --radius:       12px;
-  --font:         'Plus Jakarta Sans', system-ui, sans-serif;
+  --bg:          #080808;
+  --surface:     #0f0f0f;
+  --surface-2:   #161616;
+  --surface-3:   #1c1c1c;
+  --border:      rgba(255,255,255,0.06);
+  --border-hi:   rgba(255,255,255,0.11);
+  --text:        #f0f0ef;
+  --text-muted:  #888;
+  --text-faint:  #444;
+  --accent:      #4ade80;
+  --accent-dim:  rgba(74,222,128,0.1);
+  --accent-glow: rgba(74,222,128,0.25);
+  --radius:      12px;
+  --font:        'Plus Jakarta Sans', system-ui, sans-serif;
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -31,11 +31,11 @@ a { text-decoration: none; color: inherit; }
 
 ::selection { background: var(--accent); color: #000; }
 
-::-webkit-scrollbar { width: 4px; }
-::-webkit-scrollbar-track { background: var(--bg); }
-::-webkit-scrollbar-thumb { background: var(--surface-3); border-radius: 2px; }
+::-webkit-scrollbar         { width: 4px; }
+::-webkit-scrollbar-track   { background: var(--bg); }
+::-webkit-scrollbar-thumb   { background: var(--surface-3); border-radius: 2px; }
 
-/* ─── Layout helpers ──────────────────────────── */
+/* ─── Layout ──────────────────────────────────── */
 .container {
   max-width: 1100px;
   margin: 0 auto;
@@ -44,16 +44,7 @@ a { text-decoration: none; color: inherit; }
 
 .section { padding: 7rem 0; }
 
-@media (max-width: 768px) {
-  .container { padding: 0 1.25rem; }
-  .section   { padding: 4.5rem 0; }
-}
-
-@media (max-width: 480px) {
-  .container { padding: 0 1rem; }
-  .section   { padding: 3.5rem 0; }
-}
-
+/* ─── Shared label ────────────────────────────── */
 .label {
   display: inline-flex;
   align-items: center;
@@ -73,6 +64,9 @@ a { text-decoration: none; color: inherit; }
   height: 1.5px;
   background: var(--accent);
 }
+
+/* ─── Accent helper ───────────────────────────── */
+.accent { color: var(--accent); }
 
 /* ─── Buttons ─────────────────────────────────── */
 .btn {
@@ -109,4 +103,15 @@ a { text-decoration: none; color: inherit; }
   border-color: var(--accent);
   color: var(--accent);
   transform: translateY(-1px);
+}
+
+/* ─── Responsive ──────────────────────────────── */
+@media (max-width: 768px) {
+  .container { padding: 0 1.25rem; }
+  .section   { padding: 4.5rem 0; }
+}
+
+@media (max-width: 480px) {
+  .container { padding: 0 1rem; }
+  .section   { padding: 3.5rem 0; }
 }

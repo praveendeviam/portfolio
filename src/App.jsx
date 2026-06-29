@@ -1,8 +1,8 @@
 import Navbar  from './components/Navbar'
-import Hero    from './components/Hero'
-import About   from './components/About'
-import Skills  from './components/Skills'
-import Contact from './components/Contact'
+import Hero    from './screens/Hero'
+import About   from './screens/About'
+import Skills  from './screens/Skills'
+import Contact from './screens/Contact'
 import Footer  from './components/Footer'
 
 export default function App() {
