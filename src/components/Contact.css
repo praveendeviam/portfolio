@@ -1,0 +1,97 @@
+.contact { border-top: 1px solid var(--border); }
+
+.accent { color: var(--accent); }
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 5rem;
+  align-items: start;
+}
+
+.contact-heading {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  margin-bottom: 1.25rem;
+}
+
+.contact-sub {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+.contact-email {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--accent);
+  border-bottom: 1px solid rgba(74,222,128,0.3);
+  padding-bottom: 2px;
+  transition: border-color 0.2s;
+}
+.contact-email:hover { border-color: var(--accent); }
+
+/* Form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.cf-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.cf-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.cf-field label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.cf-field input,
+.cf-field textarea {
+  background: var(--surface);
+  border: 1px solid var(--border-hi);
+  border-radius: 8px;
+  padding: 0.8rem 1rem;
+  font-family: var(--font);
+  font-size: 0.9rem;
+  color: var(--text);
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  resize: vertical;
+}
+
+.cf-field input::placeholder,
+.cf-field textarea::placeholder {
+  color: var(--text-faint);
+}
+
+.cf-field input:focus,
+.cf-field textarea:focus {
+  border-color: rgba(74,222,128,0.4);
+  box-shadow: 0 0 0 3px rgba(74,222,128,0.07);
+}
+
+.send-btn { align-self: flex-start; }
+
+@media (max-width: 820px) {
+  .contact-layout { grid-template-columns: 1fr; gap: 3rem; }
+  .cf-row { grid-template-columns: 1fr; }
+}

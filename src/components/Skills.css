@@ -1,0 +1,97 @@
+.skills { border-top: 1px solid var(--border); }
+
+.accent { color: var(--accent); }
+
+.skills-heading {
+  font-size: clamp(1.9rem, 3.5vw, 2.9rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  margin-bottom: 3rem;
+}
+
+/* ── Bento grid ─────────────────────────────── */
+.bento-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+  gap: 1rem;
+}
+
+/*
+  Row 1: Backend & Orchestration (span 2) | Databases & Streaming (span 1)
+  Row 2: API & Security (span 1) | Observability (span 1) | Cloud & DevOps (span 1)
+  Row 3: Frontend (span 1, auto-placed)
+*/
+.bento-grid > :nth-child(1) { grid-column: span 2; }   /* Backend — wide */
+.bento-grid > :nth-child(2) { grid-column: span 1; }   /* DB */
+.bento-grid > :nth-child(3) { grid-column: span 1; }   /* API */
+.bento-grid > :nth-child(4) { grid-column: span 1; }   /* Observability */
+.bento-grid > :nth-child(5) { grid-column: span 1; }   /* Cloud */
+.bento-grid > :nth-child(6) { grid-column: span 1; }   /* Frontend */
+
+.bento-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.75rem;
+  transition: border-color 0.25s, transform 0.25s;
+}
+
+.bento-card:hover {
+  border-color: rgba(74,222,128,0.2);
+  transform: translateY(-2px);
+}
+
+.bento-title {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 1.25rem;
+}
+
+.chip-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.chip {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.45rem 0.85rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text);
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.chip:hover {
+  border-color: var(--border-hi);
+  background: var(--surface-3);
+  transform: translateY(-2px);
+}
+
+.chip-icon {
+  font-size: 1.05rem;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+@media (max-width: 860px) {
+  .bento-grid { grid-template-columns: repeat(2, 1fr); }
+  .bento-grid > :nth-child(1) { grid-column: span 2; }
+  .bento-grid > :nth-child(n+2) { grid-column: span 1; }
+}
+
+@media (max-width: 540px) {
+  .bento-grid { grid-template-columns: 1fr; }
+  .bento-grid > * { grid-column: 1 !important; }
+}
