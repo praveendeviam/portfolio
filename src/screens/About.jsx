@@ -27,17 +27,18 @@ export default function About() {
 
           <motion.div className="about-bio-col" {...flyIn(0.14)}>
             <p>
-              I&apos;m Praveen — a Lead Software Engineer with 5 years of
-              experience in platform engineering. My work sits at the
-              foundation: I design and build highly customisable, reusable
-              frameworks that business application teams rely on to ship
-              products fast without reinventing the wheel.
+              I care about the work that sits under the surface — the
+              orchestration layers, integration frameworks, and data
+              pipelines that business teams build on top of. Done well,
+              that infrastructure disappears: engineers ship without
+              friction, and the platform just works.
             </p>
             <p>
-              My approach: understand the problem first, then build the
-              simplest solution that solves it well. I&apos;ve worked on
-              everything from startup MVPs to scaling existing systems to
-              handle 10× more traffic.
+              My instinct is to understand the problem deeply before
+              touching the keyboard. The simplest solution that holds
+              under real load is almost always the right one — and
+              knowing when <em>not</em> to add complexity is a skill
+              in itself.
             </p>
             <div className="about-meta">
               <div className="meta-item">

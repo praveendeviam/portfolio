@@ -84,11 +84,10 @@ export default function Hero() {
           </h1>
 
           <motion.p className="hero-sub" {...heroFly(0.58)}>
-            I&apos;m Praveen — a Lead Software Engineer specialising in
-            platform engineering. I build highly customisable, reusable
-            frameworks that power business applications at scale — so
-            product teams spend less time on infrastructure and more
-            time on what actually matters.
+            5 years building the invisible infrastructure that lets
+            product teams move fast — orchestration engines, integration
+            frameworks, and event-driven pipelines that are reliable
+            enough to forget about.
           </motion.p>
 
           <motion.div className="hero-actions" {...heroFly(0.7)}>

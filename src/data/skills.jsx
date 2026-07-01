@@ -2,7 +2,7 @@ import {
   SiSpringboot, SiApachenifi, SiMongodb, SiPostgresql,
   SiApachekafka, SiGooglepubsub, SiReact, SiJavascript,
   SiGraphql, SiKeycloak, SiElastic, SiGrafana, SiPrometheus,
-  SiGooglecloud, SiDocker, SiGit,
+  SiGooglecloud, SiDocker, SiGit, SiKubernetes, SiGooglebigquery,
 } from 'react-icons/si'
 import { FiActivity, FiCloud, FiServer, FiWind } from 'react-icons/fi'
 
@@ -21,11 +21,12 @@ export const SKILL_GROUPS = [
     title: 'Data, Messaging & Streaming',
     size:  'md',
     items: [
-      { name: 'PostgreSQL', icon: <SiPostgresql />,   color: '#336791' },
-      { name: 'MongoDB',    icon: <SiMongodb />,      color: '#4db33d' },
-      { name: 'Kafka',      icon: <SiApachekafka />,  color: '#a0a0a0' },
-      { name: 'Pub/Sub',    icon: <SiGooglepubsub />, color: '#4285f4' },
-      { name: 'ksqlDB',     icon: <FiCloud />,        color: '#5c6bc0' },
+      { name: 'PostgreSQL', icon: <SiPostgresql />,      color: '#336791' },
+      { name: 'MongoDB',    icon: <SiMongodb />,         color: '#4db33d' },
+      { name: 'BigQuery',   icon: <SiGooglebigquery />,  color: '#4285f4' },
+      { name: 'Kafka',      icon: <SiApachekafka />,     color: '#a0a0a0' },
+      { name: 'Pub/Sub',    icon: <SiGooglepubsub />,    color: '#4285f4' },
+      { name: 'ksqlDB',     icon: <FiCloud />,           color: '#5c6bc0' },
     ],
   },
   {
@@ -50,10 +51,11 @@ export const SKILL_GROUPS = [
     title: 'Cloud & DevOps',
     size:  'md',
     items: [
-      { name: 'Azure',  icon: <FiServer />,         color: '#0089d6' },
-      { name: 'GCP',    icon: <SiGooglecloud />,    color: '#4285f4' },
-      { name: 'Docker', icon: <SiDocker />,         color: '#2496ed' },
-      { name: 'Git',    icon: <SiGit />,            color: '#f05032' },
+      { name: 'Azure',      icon: <FiServer />,         color: '#0089d6' },
+      { name: 'GCP',        icon: <SiGooglecloud />,    color: '#4285f4' },
+      { name: 'Kubernetes', icon: <SiKubernetes />,     color: '#326ce5' },
+      { name: 'Docker',     icon: <SiDocker />,         color: '#2496ed' },
+      { name: 'Git',        icon: <SiGit />,            color: '#f05032' },
     ],
   },
   {
