@@ -1,4 +1,4 @@
-import { FiGithub, FiLinkedin, FiTwitter, FiMail } from 'react-icons/fi'
+import { FiGithub, FiLinkedin, FiMail } from 'react-icons/fi'
 
 export const NAV_LINKS = [
   { label: 'About',   href: '#about'   },
@@ -7,8 +7,7 @@ export const NAV_LINKS = [
 ]
 
 export const SOCIAL_LINKS = [
-  { icon: <FiGithub />,   href: 'https://github.com/praveendeviam', label: 'GitHub'   },
-  { icon: <FiLinkedin />, href: 'https://linkedin.com',              label: 'LinkedIn' },
-  { icon: <FiTwitter />,  href: 'https://twitter.com',               label: 'Twitter'  },
-  { icon: <FiMail />,     href: 'mailto:praveendeivam1817@gmail.com', label: 'Email'   },
+  { icon: <FiGithub />,   href: 'https://github.com/praveendeviam',          label: 'GitHub'   },
+  { icon: <FiLinkedin />, href: 'https://www.linkedin.com/in/praveendeivam/', label: 'LinkedIn' },
+  { icon: <FiMail />,     href: 'mailto:praveendeivam1817@gmail.com',         label: 'Email'    },
 ]
